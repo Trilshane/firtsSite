@@ -1,0 +1,172 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .menu {
+    width: 60%;
+    font-size: 1.1em;
+  }
+  .logo {
+    font-size: 2.291em;
+  }
+  .first-section {
+    background: url(../images/Landing-page1200.jpg) no-repeat center center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .info {
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  .info > h1 {
+    font-size: 1.466em;
+  }
+  .info > p {
+    font-size: 1.1em;
+  }
+  .areas {
+    width: 68.75em;
+  }
+  .areas > h1 {
+    font-size: 2.75em;
+  }
+  .footContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .logo {
+    font-size: 2.083em;
+  }
+  .menu {
+    width: 70%;
+    font-size: 1em;
+  }
+  .info {
+    width: 100%;
+  }
+  .info > h1 {
+    font-size: 1.333em;
+  }
+  .info > p {
+    font-size: 1em;
+  }
+
+  .areas {
+    width: 37.291em;
+  }
+  .areas > h1 {
+    font-size: 2.5em;
+  }
+  .areasGrid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+  }
+  .grid1 > img {
+    width: 37.291em;
+    height: auto;
+  }
+  .grid2 > img {
+    width: 37.291em;
+    height: 17.187em;
+  }
+  .grid3 > img {
+    width: 37.291em;
+    height: 17.187em;
+  }
+  .grid4 > img {
+    width: 37.291em;
+    height: 26.041em;
+  }
+  .grid5 > img {
+    width: 37.291em;
+    height: auto;
+  }
+  .areaScale > img:hover {
+    transform: none;
+  }
+  .areaScale:hover {
+    transform: none;
+  }
+  .gridInfo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    opacity: 85%;
+    transform: translateY(0);
+    transition: 1s;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gridInfo > h1 {
+    font-size: 1.25em;
+  }
+  .gridInfo > p {
+    display: none;
+  }
+}
+@media (max-width: 786px) {
+  .container {
+    width: 100%;
+  }
+  .logo {
+    font-size: 1.875em;
+  }
+  .menu {
+    width: 80%;
+    font-size: 0.9em;
+  }
+  .info {
+    width: 100%;
+  }
+  .info > h1 {
+    font-size: 1.2em;
+  }
+  .info > p {
+    font-size: 0.9em;
+  }
+  .areas {
+    width: 33.562em;
+  }
+  .areas > h1 {
+    font-size: 2.25em;
+  }
+  .grid1 > img {
+    width: 33.562em;
+    height: auto;
+  }
+  .grid2 > img {
+    width: 33.562em;
+  }
+  .grid3 > img {
+    width: 33.562em;
+  }
+  .grid4 > img {
+    width: 33.562em;
+  }
+  .grid5 > img {
+    width: 33.562em;
+  }
+  .gridInfo > h1 {
+    font-size: 1.125em;
+  }
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

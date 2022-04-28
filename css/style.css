@@ -3,9 +3,9 @@ body {
   font-family: "Montserrat", "sans-serif";
 }
 .first-section {
-  height: 100vh;
-  background: url(images/Landing-page.jpg) no-repeat center center;
+  background: url(../images/Landing-page.jpg) center center no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 .container {
   background-color: white;
@@ -23,22 +23,39 @@ body {
   padding-left: 0.5em;
 }
 .logo > a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 .menu {
   display: flex;
   justify-content: space-evenly;
-  list-style: none;
   width: 50%;
   font-size: 1.2em;
-  text-transform: uppercase;
 }
-.menu > li > a {
+.subMenu {
+  position: absolute;
+  min-width: 150px;
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+.subMenu > li {
+  margin-top: 5px;
+}
+.menu > .dropDownList:hover > .subMenu {
+  display: inherit;
+}
+ul {
+  list-style: none;
+}
+li > a {
   text-decoration: none;
   color: black;
 }
-
+li > a:hover {
+  color: gold;
+}
 .info {
   background-color: white;
   opacity: 80%;
@@ -50,6 +67,7 @@ body {
   top: 42%;
   left: 4%;
   border-radius: 20px;
+  padding: 0.7%;
 }
 .info > h1 {
   font-size: 1.6em;
@@ -70,8 +88,12 @@ body {
   padding-left: 7px;
   padding-right: 7px;
 }
+.info > a:hover {
+  color: gold;
+  border-bottom: 2px black solid;
+}
 .areas {
-  width: 1200px;
+  width: 75em;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -207,12 +229,33 @@ body {
   padding-top: 1em;
 }
 .footContacts > a {
-  text-decoration: none;
   color: #fff;
 }
 .footContainer > span {
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 .footIcons {
-  margin: 1em auto 1em auto;
+  margin-top: 1em;
+}
+.contacts {
+  height: 85vh;
+  width: 100vh;
+}
+.contactsText {
+  position: absolute;
+  font-size: 2.2em;
+  top: 33%;
+  left: 38%;
+}
+.contactsPhone {
+  position: absolute;
+  font-size: 6em;
+  top: 36%;
+  left: 30%;
+}
+.contactsMail {
+  position: absolute;
+  font-size: 2.2em;
+  top: 47%;
+  left: 45%;
 }
