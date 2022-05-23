@@ -1,0 +1,31 @@
+.consultation {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.childParentsRelationship {
+  display: flex;
+  justify-content: center;
+  
+}
+.textLeft {
+  text-align: left;
+  padding: 10px;
+}
+.textRight {
+  text-align: right;
+  padding: 10px;
+}
+.textLeftcolorPink {
+  background-color: pink;
+}
+.textLeftcolorSalad {
+  background-color: rgb(205, 241, 105);
+}
+.parentChildrenText {
+  display: flex;
+  flex-direction: column;
+}
+.parentChildrenImg {
+  width: 20%;
+}

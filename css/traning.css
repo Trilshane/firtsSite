@@ -1,0 +1,54 @@
+.traningPageDV {
+  display: flex;
+  justify-content: center;
+}
+.trainingText {
+  background-color: pink;
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.trainingText > h1 {
+  font-size: 3em;
+}
+.trainingText > p {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+.trainingText ul li {
+  font-size: 1.5em;
+  text-align: left;
+}
+.trainingPicture {
+  max-width: 500px;
+  max-height: 750px;
+}
+.tranings > h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 3em;
+}
+.tranings {
+  padding: 10px;
+  background-color: rgb(205, 241, 105);
+}
+
+details {
+  cursor: pointer;
+  max-width: max-content;
+}
+details > summary {
+  font-size: 1.7em;
+}
+details > summary:hover {
+  font-weight: bold;
+}
+details > p {
+  cursor: default;
+  font-size: 1.5em;
+}

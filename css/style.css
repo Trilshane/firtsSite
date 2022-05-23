@@ -1,163 +1,312 @@
+@font-face {
+  font-family: "Antique Olive";
+  src: url(../fonts/ofont.ru_Antique\ Olive.ttf);
+}
 body {
   margin: 0;
-  font-family: "Montserrat", "sans-serif";
+  font-family: "Antique Olive", "sans-serif";
 }
-.first-section {
-  background: url(../images/Landing-page.jpg) center center no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
+
 .container {
-  background-color: white;
-  opacity: 66%;
+  background-color: gainsboro;
   display: flex;
   justify-content: space-between;
-  position: absolute;
   width: 100%;
 }
 .logo {
-  display: flex;
-  align-items: center;
-  font-size: 2.5em;
-  font-family: "Beau Rivage", "sans-serif";
-  padding-left: 0.5em;
+  width: 10%;
+  border-bottom: gainsboro solid 0.5px;
 }
 .logo > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   text-decoration: none;
+  text-align: center;
+  background-color: white;
+  width: 70px;
+  height: 100%;
+}
+.logo > a > img {
+  width: 80%;
 }
 .menu {
-  display: flex;
-  justify-content: space-evenly;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
   font-size: 1.2em;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+}
+.menu > ul > li {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.menu > ul > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.colorLemon {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(205, 241, 105);
+  border-bottom: gainsboro solid 1px;
+}
+.colorPink {
+  background-color: pink;
+  border-bottom: gainsboro solid 1px;
+}
+.colorWhite {
+  background-color: white;
+  border-bottom: gainsboro solid 1px;
+}
+.dropDownList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .subMenu {
   position: absolute;
-  min-width: 150px;
+  width: 25%;
   display: none;
+  transform: translateY(68%);
   padding: 10px;
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
+  background-color: white;
+  border: gainsboro 1px solid;
 }
-.subMenu > li {
+.subMenu > a {
   margin-top: 5px;
 }
-.menu > .dropDownList:hover > .subMenu {
-  display: inherit;
+.menu > ul > li > .dropDownList:hover > .subMenu {
+  display: flex;
+  flex-direction: column;
 }
-ul {
-  list-style: none;
-}
-li > a {
+.subMenu > a {
   text-decoration: none;
   color: black;
 }
-li > a:hover {
+.menu ul > li > a:hover {
   color: gold;
 }
+.menu > ul > li > .dropDownList:hover > .subMenu > a:hover {
+  color: gold;
+}
+.first-section {
+  background: url(../images/Landing-page.jpg) center center fixed no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(35, 1fr);
+  grid-template-columns: repeat(25, 1fr);
+}
 .info {
-  background-color: white;
-  opacity: 80%;
-  width: 40%;
+  grid-column-start: 2;
+  grid-column-end: 11;
+  grid-row-start: 9;
+  grid-row-end: 21;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  top: 42%;
-  left: 4%;
-  border-radius: 20px;
-  padding: 0.7%;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  background-color: white;
+  position: static;
+  height: 100%;
 }
 .info > h1 {
-  font-size: 1.6em;
+  font-size: 2.8rem;
   font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 0;
+  padding: 0 10px;
 }
 .info > p {
-  font-size: 1.2em;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 10px;
 }
-.info > a {
-  margin-bottom: 3%;
-  font-size: 1.2em;
-  text-transform: uppercase;
+
+.block1 {
+  background-color: rgb(205, 241, 105);
+  grid-column-start: 11;
+  grid-column-end: 14;
+  grid-row-start: 9;
+  grid-row-end: 15;
+}
+.block2 {
+  background-color: pink;
+  grid-column-start: 11;
+  grid-column-end: 14;
+  grid-row-start: 15;
+  grid-row-end: 21;
+}
+.block2 > a {
+  text-align: center;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
   text-decoration: none;
   color: black;
-  border-bottom: 2px gold solid;
-  padding-left: 7px;
-  padding-right: 7px;
-}
-.info > a:hover {
-  color: gold;
-  border-bottom: 2px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .areas {
-  width: 75em;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 .areas > h1 {
   text-align: center;
   font-size: 3em;
-  font-weight: 400;
+  font-weight: bold;
 }
 .areasGrid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(7, 10em);
-  grid-gap: 10px;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(6, 10em);
+  grid-gap: 3px;
+  margin: 10px;
 }
 .grid1 {
-  grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 7;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 7;
 }
 .grid1 > img {
   width: 29.625em;
   height: 41.875em;
+  position: static;
 }
 .grid2 {
-  grid-column-start: 5;
-  grid-column-end: 11;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 17;
+  grid-column-end: 26;
 }
 .grid2 > img {
   width: 44.75em;
   height: 20.625em;
 }
 .grid3 {
-  grid-column-start: 5;
-  grid-column-end: 11;
-  grid-row-start: 3;
-  grid-row-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 7;
+  grid-column-end: 15;
 }
 .grid3 > img {
-  width: 44.75em;
+  width: 37.635em;
   height: 20.625em;
 }
-
 .grid4 {
-  grid-column-start: 5;
-  grid-column-end: 11;
-  grid-row-start: 5;
-  grid-row-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 15;
+  grid-column-end: 24;
 }
 .grid4 > img {
   width: 44.75em;
   height: 31.25em;
 }
 .grid5 {
-  grid-column-start: 1;
-  grid-column-end: 5;
   grid-row-start: 5;
-  grid-row-end: 8;
+  grid-row-end: 7;
+  grid-column-start: 7;
+  grid-column-end: 15;
 }
 .grid5 > img {
-  width: 29.625em;
-  height: 31.25em;
+  width: 37.635em;
+  height: 20.625em;
+}
+.grid6 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: pink;
+}
+.grid7 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  background-color: gainsboro;
+}
+.grid8 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 24;
+  grid-column-end: 26;
+  background-color: pink;
+}
+.grid9 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 7;
+  grid-column-end: 15;
+  background-color: rgb(205, 241, 105);
+}
+.grid10 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  background-color: rgb(205, 241, 105);
+}
+.grid11 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 11;
+  grid-column-end: 15;
+  background-color: gainsboro;
+}
+.grid12 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 15;
+  grid-column-end: 17;
+  background-color: pink;
+}
+.grid13 {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 15;
+  grid-column-end: 17;
+  background-color: gainsboro;
+}
+.grid14 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 17;
+  grid-column-end: 24;
+  background-color: rgb(205, 241, 105);
+}
+.grid15 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 24;
+  grid-column-end: 26;
+  background-color: gainsboro;
 }
 .areaScale {
   display: inline-block;
@@ -183,10 +332,10 @@ li > a:hover {
   transform: translateY(100%);
   transition: 1s;
   color: white;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .gridInfo > h1 {
@@ -253,9 +402,24 @@ li > a:hover {
   top: 36%;
   left: 30%;
 }
-.contactsMail {
+.contactsMail > a {
   position: absolute;
   font-size: 2.2em;
   top: 47%;
   left: 45%;
+  text-decoration: none;
+  color: black;
+}
+.contactColors {
+  display: flex;
+}
+.contactColors > div {
+  width: 33.3%;
+  height: 100%;
+}
+.contactPink {
+  background-color: pink;
+}
+.contactSalad {
+  background-color: rgb(205, 241, 105);
 }

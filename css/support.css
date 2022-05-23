@@ -1,0 +1,43 @@
+.supportPage {
+  max-width: 1980px;
+  background-color: pink;
+}
+.suppotPageDV {
+  display: flex;
+  align-items: center;
+}
+.supportPicture {
+  width: 450px;
+  margin-right: 15px;
+}
+.supportText {
+  font-size: 1.5em;
+}
+.supportText h1 {
+  font-size: 3rem;
+}
+.supportText h6 {
+  font-size: 1rem;
+}
+.supportPageMiddle {
+  padding: 5px 10px;
+}
+.chamberGroups {
+  font-size: 1.8em;
+  margin-top: 5px;
+}
+.groupOptions {
+  font-size: 1.5em;
+}
+.groupOptions > ul > li {
+  font-size: 1.3rem;
+}
+.supportPageEnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supportPageEnd p {
+  font-size: 1.5em;
+  font-weight: bold;
+}

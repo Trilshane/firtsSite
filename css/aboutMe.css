@@ -1,0 +1,75 @@
+.aboutMeDV {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+.aboutMePicture {
+  width: 35%;
+}
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(205, 241, 105);
+  padding: 5px;
+}
+.aboutMeText > h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+.aboutMeText > h6 {
+  font-size: 1em;
+}
+.aboutMeText > p {
+  font-size: 1.5em;
+}
+.interests {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 5%;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.education > h1 {
+  font-size: 2.5em;
+}
+.education > ul > li {
+  font-size: 1.3em;
+  padding: 0.6em;
+}
+.purposeWork {
+  background-color: pink;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purposeWork > p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  margin-right: 3%;
+}
+.purposeImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.purposeImage > img {
+  width: 100px;
+  height: 100px;
+}
+
+.purposeImage > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+}
