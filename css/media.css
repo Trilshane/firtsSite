@@ -1,7 +1,4 @@
 @media screen and (max-width: 1600px) {
-}
-
-@media screen and (max-width: 1599px) {
   .menu {
     width: 60%;
   }
@@ -58,7 +55,7 @@
     grid-column-end: 13;
   }
   .grid3 > img {
-    width: 37.635em;
+    max-width: 37.635em;
     height: 20.625em;
   }
   .grid4 {
@@ -78,8 +75,8 @@
     grid-column-end: 17;
   }
   .grid5 > img {
-    width: 37.635em;
-    height: 20.625em;
+    width: 556.81px;
+    height: 323px;
   }
   .grid6 {
     grid-row-start: 1;
@@ -131,15 +128,18 @@
   .grid15 {
     display: none;
   }
+  .childClubPreview p {
+    padding: 30px 75px;
+  }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .menu {
     width: 70%;
   }
+
   .first-section {
     height: 100vh;
-    display: grid;
   }
   .info {
     width: 463.72px;
@@ -180,7 +180,7 @@
     grid-column-end: 26;
   }
   .grid2 > img {
-    width: 673.81px;
+    width: 42.11em;
     height: 323px;
   }
   .grid3 {
@@ -210,8 +210,8 @@
     grid-column-end: 26;
   }
   .grid5 > img {
-    width: 673.81px;
-    height: 20.625em;
+    width: 42.11em;
+    height: auto;
   }
   .grid6 {
     display: none;
@@ -228,18 +228,66 @@
   .grid10 {
     display: none;
   }
+  .trainingText > h1 {
+    font-size: 2.5em;
+  }
+  .trainingText > p {
+    font-size: 1.3em;
+  }
+  .trainingText ul li {
+    font-size: 1.3em;
+  }
+  .trainingPicture {
+    max-width: 500px;
+  }
+  .childClublessons {
+    font-size: 3em;
+    padding: 35px;
+  }
+  .storiesPreview p {
+    width: 100%;
+  }
+  .storieText {
+    margin: 10px;
+  }
 }
 @media screen and (max-width: 991px) {
-  .first-section {
-    display: flex;
+  .openMenu {
+    display: block;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 57px;
+    background-color: white;
+    padding: 0;
+  }
+  .menu > ul {
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  .active {
+    display: block;
+    z-index: 1;
+  }
+  .adaptiveSubMenu {
+    display: block;
+  }
+  .menu > ul > li > .dropDownList:hover > .subMenu {
+    display: none;
+  }
+  .first-section {
+    background: url(../images/Landing-page991.jpg) center center local no-repeat;
+    background-size: cover;
   }
   .info {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: max-content;
-    background-color: rgb(205, 241, 105);
   }
   .info > h1 {
     font-size: 2em;
@@ -249,8 +297,8 @@
     font-size: 1.2em;
     margin-bottom: 0;
   }
-  .block2 {
-    width: 100%;
+  .areas > h1 {
+    display: none;
   }
   .areasGrid {
     display: flex;
@@ -258,25 +306,344 @@
     align-items: center;
   }
   .grid1 > img {
-    width: 29.625em;
+    width: 38em;
+    height: 100%;
   }
   .grid2 > img {
-    width: 29.625em;
+    width: 38em;
   }
 
   .grid3 > img {
-    width: 29.625em;
+    width: 38em;
   }
   .grid4 > img {
-    width: 29.625em;
+    width: 38em;
   }
   .grid5 > img {
-    width: 29.625em;
+    width: 38em;
+  }
+  .areaScale > img:hover {
+    transform: none;
+  }
+  .gridInfo {
+    transform: none;
+  }
+  .gridInfo > p {
+    display: none;
+  }
+  .traningPageDV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gridInfo > h1 {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+  }
+  .gridInfo > a {
+    font-size: 0.7em;
+  }
+  .traningPage {
+    width: 100%;
+  }
+  .trainingText {
+    padding: 0;
+  }
+  .trainingText > h1 {
+    font-size: 2.3em;
+  }
+  .trainingText > p {
+    font-size: 1.3em;
+  }
+  .trainingText ul li {
+    font-size: 1.3em;
+  }
+  .trainingPicture {
+    max-width: 600px;
+    padding-bottom: 10px;
+  }
+  .tranings {
+    display: flex;
+    flex-direction: column;
+  }
+  .consultationtabcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+  .bgc_color {
+    display: none;
+  }
+  .consultationtabheader {
+    order: -1;
+    display: flex;
+    width: 97%;
+    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .consultationtabheader__item {
+    margin-top: 35px;
+    padding-left: 6px;
+    border-left: 1px solid #000;
+    font-size: 17px;
+    width: 60%;
+    padding-right: 3px;
+  }
+  .consultationtabheader__item__active {
+    font-size: 18px;
+  }
+  .consultationtabheader h3 {
+    display: none;
+  }
+  .consultationtabcontent {
+    width: 768px;
+    height: auto;
+    position: relative;
+  }
+  .consultationtabcontent img {
+    width: 768px;
+    height: auto;
+  }
+  .consultationtabcontent__descr {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 748px;
+    padding: 25px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #000;
+    background-color: rgb(205, 241, 105);
+    opacity: 1;
+  }
+  .consultationinfocontainer {
+    width: 97%;
+  }
+  .suppotPageDV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .supportPicture {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+  }
+  .supportText {
+    max-width: 97%;
+    order: -1;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+  .supportText h1 {
+    font-size: 2.5rem;
+  }
+  .supportText ul li {
+    list-style-position: inside;
+    text-align: left;
+  }
+  .supportPageEnd {
+    text-align: center;
+  }
+  .womenclubpreview p {
+    padding: 20px 15px;
+  }
+  .womenClubProjects h1 {
+    font-size: 2.5em;
+  }
+  .womenClubProjects h3 {
+    font-size: 1.7em;
+  }
+  .womenClubProjectsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .womenClubProjectsList li {
+    width: 95%;
+  }
+  .childClubPreview p {
+    padding: 10px;
+  }
+  .childClubTabSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .childClublessons {
+    font-size: 2.5em;
+    padding: 27px;
+  }
+  .aboutMeDV {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutMePicture {
+    order: 2;
+    width: 75%;
+  }
+  .aboutMeText {
+    text-align: center;
+  }
+  .contactsText {
+    font-size: 2.1rem;
+  }
+  .contactsPhone {
+    font-size: 4rem;
+  }
+  .contactsMail {
+    font-size: 2.3rem;
   }
 }
-
 @media (max-width: 767px) {
-}
+  .first-section {
+    background: url(../images/Landing-page767.jpg) center center local no-repeat;
+    background-size: cover;
+  }
+  .grid1 > img {
+    width: 30em;
+    height: 100%;
+  }
+  .grid2 > img {
+    width: 30em;
+    height: 100%;
+  }
 
-@media (max-width: 360px) {
+  .grid3 > img {
+    width: 30em;
+    height: 100%;
+  }
+  .grid4 > img {
+    width: 30em;
+    height: 100%;
+  }
+  .grid5 > img {
+    width: 30em;
+    height: 100%;
+  }
+  .trainingPicture {
+    max-width: 400px;
+  }
+  .consultationtabcontent {
+    width: 481px;
+  }
+  .consultationtabcontent img {
+    width: 481px;
+  }
+  .consultationtabcontent__descr {
+    width: 461px;
+  }
+  .review {
+    flex-direction: column;
+  }
+
+  .storiesPreview p {
+    padding: 15px 0;
+  }
+  .photoreviewOrder {
+    order: 1;
+  }
+  .purposeWork {
+    flex-direction: column;
+  }
+  .contactsText {
+    font-size: 1.3rem;
+  }
+  .contactsPhone {
+    font-size: 2.8rem;
+  }
+  .contactsMail {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .first-section {
+    background: url(../images/Landing-page480.jpg) local no-repeat;
+    background-size: cover;
+  }
+  .grid1 > img {
+    width: 350px;
+  }
+  .grid2 > img {
+    width: 350px;
+  }
+  .grid3 > img {
+    width: 350px;
+  }
+  .grid4 > img {
+    width: 350px;
+  }
+  .grid5 > img {
+    width: 350px;
+  }
+  .trainingPicture {
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+  .consultationtabheader {
+    font-size: 14px;
+  }
+  .consultationtabheader__item {
+    font-size: 14px;
+  }
+  .consultationtabheader__item__active {
+    font-size: 14px;
+  }
+  .consultationtabcontent {
+    width: 100%;
+  }
+  .consultationtabcontent img {
+    width: 100%;
+  }
+  .consultationtabcontent__descr {
+    width: 98%;
+    padding: 15px 7px;
+  }
+  .childClublessons {
+    font-size: 2.2em;
+    padding: 22px;
+  }
+  .supportPicture {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .aboutMePicture {
+    width: 100%;
+  }
+  .education {
+    text-align: center;
+    list-style-position: inside;
+  }
+  .education > ul > li {
+    text-align: left;
+  }
+  .purposeWork > p {
+    padding-bottom: 10px;
+  }
+  .contactsText {
+    font-size: 1.5rem;
+    transform: translate(10%, 35%);
+  }
+  .contactsPhone {
+    font-size: 2rem;
+  }
+  .contactsMail {
+    font-size: 1.5rem;
+    transform: translate(9%, -35%);
+  }
+  .contactBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

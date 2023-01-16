@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: "Antique Olive", "sans-serif";
 }
-
 .container {
   background-color: gainsboro;
   display: flex;
@@ -37,6 +36,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.openMenu {
+  display: none;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 5px;
+}
 .menu > ul {
   display: flex;
   align-items: center;
@@ -49,7 +55,6 @@ body {
 }
 .menu > ul > li {
   align-self: stretch;
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -94,6 +99,7 @@ body {
   padding: 10px;
   background-color: white;
   border: gainsboro 1px solid;
+  z-index: 1;
 }
 .subMenu > a {
   margin-top: 5px;
@@ -109,21 +115,18 @@ body {
 .menu ul > li > a:hover {
   color: gold;
 }
+.adaptiveSubMenu {
+  display: none;
+}
 .menu > ul > li > .dropDownList:hover > .subMenu > a:hover {
   color: gold;
 }
 .first-section {
   background: url(../images/Landing-page.jpg) center center fixed no-repeat;
   background-size: cover;
-  display: grid;
-  grid-template-rows: repeat(35, 1fr);
-  grid-template-columns: repeat(25, 1fr);
+  height: 100vh;
 }
 .info {
-  grid-column-start: 2;
-  grid-column-end: 11;
-  grid-row-start: 9;
-  grid-row-end: 21;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,8 +134,10 @@ body {
   color: black;
   text-align: center;
   background-color: white;
-  position: static;
-  height: 100%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 40%;
 }
 .info > h1 {
   font-size: 2.8rem;
@@ -145,31 +150,19 @@ body {
   font-weight: bold;
   padding: 0 10px;
 }
-
-.block1 {
-  background-color: rgb(205, 241, 105);
-  grid-column-start: 11;
-  grid-column-end: 14;
-  grid-row-start: 9;
-  grid-row-end: 15;
-}
-.block2 {
+.info .infoColorPink {
+  width: 100%;
   background-color: pink;
-  grid-column-start: 11;
-  grid-column-end: 14;
-  grid-row-start: 15;
-  grid-row-end: 21;
 }
-.block2 > a {
-  text-align: center;
-  height: 100%;
-  font-size: 1.8rem;
-  font-weight: bold;
+.info a {
+  width: 100%;
   text-decoration: none;
+  font-size: 2em;
   color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: bold;
+}
+.info a:hover {
+  color: gold;
 }
 .areas {
   margin: 0 auto;
@@ -215,7 +208,7 @@ body {
   grid-column-end: 15;
 }
 .grid3 > img {
-  width: 37.635em;
+  width: 37.871875em;
   height: 20.625em;
 }
 .grid4 {
@@ -235,8 +228,8 @@ body {
   grid-column-end: 15;
 }
 .grid5 > img {
-  width: 37.635em;
-  height: 20.625em;
+  width: 37.871875em;
+  height: auto;
 }
 .grid6 {
   grid-row-start: 1;
@@ -346,8 +339,9 @@ body {
 .gridInfo > p {
   padding: 1em;
   margin-top: 0;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 300;
+  text-align: center;
 }
 .gridInfo > a {
   text-decoration: none;
@@ -364,7 +358,472 @@ body {
   border-radius: 10px;
   font-weight: 400;
 }
-
+.traningPageDV {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+}
+.trainingText {
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.trainingText > h1 {
+  font-size: 3em;
+}
+.trainingText > p {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+.trainingText ul li {
+  font-size: 1.5em;
+  text-align: left;
+}
+.trainingPicture {
+  max-width: 600px;
+}
+.traningsPage > h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 3em;
+}
+.traningsPage {
+  padding: 10px;
+  background-color: rgb(205, 241, 105);
+}
+.tranings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+.tranings h3 {
+  font-size: 2em;
+  text-align: center;
+}
+.traning p {
+  text-align: center;
+  font-size: 1.2em;
+}
+.consultation {
+  margin: 10px;
+}
+.bgc_color {
+  position: absolute;
+  left: 0;
+  top: -155px;
+  width: 50vw;
+  height: 100vh;
+  background: pink;
+  z-index: -1;
+}
+.consultationtabcontainer {
+  display: flex;
+  width: 1130px;
+  margin: 0 auto;
+  padding-bottom: 108px;
+}
+.consultationtabcontent {
+  width: 850px;
+  height: 600px;
+  position: relative;
+}
+.consultationtabcontent img {
+  width: 100%;
+  height: 100%;
+}
+.consultationtabcontent__descr {
+  position: absolute;
+  top: 370px;
+  right: -177px;
+  width: 550px;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000;
+  background-color: rgb(205, 241, 105);
+  opacity: 0.8;
+}
+.consultationtabheader {
+  width: 280px;
+  padding: 35px 30px;
+  background-color: #fff;
+}
+.consultationtabheader h3 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.consultationtabheader__item {
+  margin-top: 35px;
+  padding-left: 26px;
+  border-left: 1px solid #000;
+}
+.consultationtabheader__item {
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.consultationtabheader__item__active {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+}
+.consultationinfocontainer {
+  width: 1200px;
+  margin: 0 auto;
+}
+.consultationcontainerinfo {
+  text-align: center;
+  font-size: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 10px;
+}
+.supportPage {
+  background-color: pink;
+}
+.suppotPageDV {
+  display: flex;
+  align-items: center;
+}
+.supportPicture {
+  width: 550px;
+  height: auto;
+  margin-right: 15px;
+}
+.supportText {
+  font-size: 1.5em;
+}
+.supportText h1 {
+  font-size: 3rem;
+}
+.supportText h6 {
+  font-size: 1rem;
+}
+.supportPageMiddle {
+  text-align: center;
+}
+.basicthemes {
+  background-color: rgb(205, 241, 105);
+}
+.basicthemes {
+  padding: 10px 0;
+  text-align: center;
+}
+.basicthemes h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+.basicthemes ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+.basicthemes ul li {
+  font-size: 1.5em;
+  list-style-position: inside;
+  text-align: left;
+}
+.chamberGroups {
+  font-size: 1.8em;
+  margin-top: 5px;
+}
+.groupOptions {
+  font-size: 1.5em;
+}
+.groupOptions > ul > li {
+  font-size: 1.3rem;
+  list-style-position: inside;
+}
+.supportPageEnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  padding: 15px;
+}
+.supportPageEnd p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.womenclubfirst {
+  margin: 0;
+  padding: 0;
+}
+.womenclubpreview img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.womenclubpreview p {
+  font-size: 20px;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 20px 150px;
+}
+.womenClubProjects {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.womenClubProjects h1 {
+  font-size: 3em;
+}
+.womenClubProjects h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.womenClubProjectsList {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+}
+.womenClubProjectsList li {
+  width: 300px;
+  list-style: none;
+}
+.womenClubProjectsList li h4 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+.womenClubProjectsList li {
+  font-size: 1.2em;
+}
+.womenclubreviews {
+  background-color: pink;
+}
+.womenclubreviews h1 {
+  text-align: center;
+  font-size: 3em;
+}
+.review {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.review p {
+  width: 100%;
+  margin: 0 10px;
+  text-align: justify;
+  font-size: 1.2em;
+}
+.photoreview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photoreview img {
+  width: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.photoreview p {
+  font-weight: bold;
+  text-align: center;
+}
+.reviewBGSalad {
+  background-color: rgb(205, 241, 105);
+}
+.photoreviewOrder {
+  order: -1;
+}
+.childClubPreview img {
+  width: 100%;
+  margin-bottom: 10px;
+  max-height: auto;
+}
+.childClubPreview p {
+  max-width: 1300px;
+  text-align: center;
+  margin: 0px auto 10px auto;
+  font-size: 1.2em;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  padding: 30px 90px;
+}
+.childClubTabs {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.childClubTabs h1 {
+  text-align: center;
+}
+.childClubTabSection {
+  display: flex;
+  justify-content: space-evenly;
+}
+.childClubTab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  margin: 10px;
+}
+.childClubTab h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.childClubTab p {
+  text-align: center;
+  font-size: 1.2em;
+}
+.childClublessons {
+  background-color: rgb(205, 241, 105);
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bold;
+  padding: 45px;
+}
+.storiesPreview img {
+  width: 100%;
+  height: 300px;
+}
+.storiesPreview p {
+  width: 1200px;
+  font-size: 20px;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 30px;
+  margin: 30px auto;
+}
+.storiesPreview p > span {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+.storiesBlock {
+  margin: 0 auto;
+}
+.storieBGpink {
+  background-color: pink;
+}
+.storieBGsalad {
+  background-color: rgb(205, 241, 105);
+}
+.storie {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 25px;
+}
+.storieHead {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7em;
+}
+.storie a:hover {
+  color: gold;
+}
+.storie p {
+  font-size: 1.2em;
+}
+.storiebutton {
+  background-color: #fff;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 100px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.storieText {
+  max-width: 1200px;
+  margin: 10px auto;
+  text-align: justify;
+  font-size: 1.2em;
+}
+.aboutMeDV {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(205, 241, 105);
+  margin-bottom: 10px;
+}
+.aboutMePicture {
+  min-width: 35%;
+}
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.aboutMeText > h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+.aboutMeText > h6 {
+  font-size: 1em;
+}
+.aboutMeText > p {
+  font-size: 1.5em;
+  text-align: justify;
+}
+.interests {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 5%;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.education > h1 {
+  font-size: 2.5em;
+}
+.education > ul > li {
+  font-size: 1.3em;
+  padding: 0.6em;
+}
+.purposeWork {
+  background-color: pink;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+.purposeWork > p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  margin-right: 3%;
+}
+.purposeImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.purposeImage > img {
+  width: 100px;
+  height: 100px;
+}
+.purposeImage > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+}
 .footContainer {
   background-color: #383636;
   color: #fff;
@@ -387,39 +846,52 @@ body {
   margin-top: 1em;
 }
 .contacts {
-  height: 85vh;
-  width: 100vh;
+  height: 78vh;
+}
+.contactsBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .contactsText {
-  position: absolute;
-  font-size: 2.2em;
-  top: 33%;
-  left: 38%;
+  font-size: 2.2rem;
+  transform: translate(15%, 45%);
+  text-transform: uppercase;
 }
 .contactsPhone {
-  position: absolute;
-  font-size: 6em;
-  top: 36%;
-  left: 30%;
+  font-size: 4.5rem;
 }
-.contactsMail > a {
-  position: absolute;
-  font-size: 2.2em;
-  top: 47%;
-  left: 45%;
-  text-decoration: none;
-  color: black;
+.contactsMail {
+  font-size: 2.5rem;
+  transform: translate(45%, -45%);
+  display: inline-block;
 }
-.contactColors {
+.contactBtns {
   display: flex;
+  justify-content: space-between;
 }
-.contactColors > div {
-  width: 33.3%;
-  height: 100%;
+.contactBtns a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  padding: 30px;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  margin: 10px;
 }
-.contactPink {
+.bgbtnpink {
   background-color: pink;
 }
-.contactSalad {
+.bgbtnsalad {
   background-color: rgb(205, 241, 105);
+}
+.contactBtns a:hover {
+  color: gold;
 }
